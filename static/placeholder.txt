@@ -1,0 +1,6 @@
+Coloque aqui os arquivos de imagem:
+- bg.png (imagem de fundo)
+- t1.png (logo do Discord)
+- q.png (QR code)
+
+Estes arquivos devem ser copiados do seu projeto original para esta pasta.

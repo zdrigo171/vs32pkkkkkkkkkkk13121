@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Login</title>
+    <style>
+        body {
+            background-image: url('bg.png');
+            font-family: Arial, sans-serif;
+            background-color: #36393f;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo-container img {
+            height: 100px;
+        }
+
+        .login-container {
+            background-color: rgba(47, 49, 54, 0.9);
+            border-radius: 8px;
+            padding: 45px;
+            width: 700px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-container {
+            width: 48%;
+        }
+
+        .qr-code-container {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .para {
+            color: #9c9c9c;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            color: #afafaf;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #7289da;
+            border-radius: 4px;
+            background-color: #40444b;
+            color: #ffffff;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #3636dd;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5b6eae;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #0ea2f9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .qr-code-image {
+            margin-bottom: 20px;
+        }
+
+        .qr-code-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .qr-code-subtitle {
+         text-align: center;
+            color: #9c9c9c;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="t1.png" alt="Discord Logo">
+    </div>
+    <div class="login-container">
+        <!-- Form Section -->
+        <div class="form-container">
+            <h1>Welcome Back!</h1>
+            <div class="para">
+                <p>We're so excited to see you again!</p>
+            </div>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <a href="#">Forgot your Password?</a>
+                <br><br>
+                <button type="submit">Log In</button>
+            </form>
+            <p><br>Don't have an account? <a href="#">Register here</a></p>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="qr-code-container">
+            <img src="q.png" alt="QR Code" class="qr-code-image" width="250" height="250">
+            <div class="qr-code-title">
+                <h1>Log in with QR Code</h1>
+                </div>
+            <div class="qr-code-subtitle">
+                Scan this with the <strong>Discord mobile app</strong> to log in instantly.
+                <br><a href="#"><br>Or, sign in with passkey</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
